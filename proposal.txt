@@ -1,0 +1,40 @@
+Title: Prompt-based group robot agents
+I propose to build a multi-robot system that can collaborate to search a target set by the user using natural language in a randomly built maze.
+Environment:
+This project has two environments: a user-prompted one and a randomly generated maze.
+The maze will be represented using walls (“#”) and space (“ ”), where some special letter will be the target located somewhere in the maze. E.g. 
+Autonomous Agents
+Two types of agents will be used in this project. One is an NLP agent, which will tokenize the user’s prompts, analyse the target letter that the user wants and send it to the group of robots.
+After receiving the target letter, the group of robots will start their searching task. To make it more fun, there will be three types of robots, Scout, Excavator and Controller.
+The Scout can find and mark the letters around itself within a constant distance, and walls can’t block its radar. 
+The Excavator is responsible to grab the letter found by the scout and take it back to the controller.
+The Controller can communicate with all other robots, receive the coordinate info from scouts and deliver tasks to excavators.
+All parameters including the number of robots will be set before each trail.
+Questions
+1.	For a given size of the maze and a given number of robots, how we distribute the roles for them will achieve the best performance (speed to find the target).
+2.	What algorithm can help the excavator to find the target after getting the target’s coordinates? 
+3.	Based on the coordination of excavators and targets, how does the controller best deliver the task to each excavator?
+Experiments
+1.	To solve question 1, I will try different combinations of robots, using the same maze and the same prompts.
+2.	To solve question 2, I will use and compare different search algorithms such as dfs, bfs, A* and other heuristic algorithms if possible.
+3.	To solve question 3, I will set different strategies to deliver the task and compare the performance while using the same search algorithm.
+
+
+Prompt-based Group Robot Agents
+This project develops a multi-robot system to search for a user-specified target in a randomly generated maze using natural language prompts.
+Environment
+The maze consists of walls ("#") and open spaces (" "), with a special letter as the target.
+ 
+Autonomous Agents
+1.	NLP Agent – Tokenizes user prompts, extracts the target letter, and informs the robots.
+2.	Scout – Detects nearby letters within a fixed range, unaffected by walls.
+3.	Excavator – Retrieves the target and delivers it to the Controller.
+4.	Controller – Coordinates scouts and excavators, assigning tasks efficiently.
+Questions
+1.	How should robot roles be distributed for optimal search speed?
+2.	What search algorithm best guides excavators to the target?
+3.	How should the Controller allocate tasks for maximum efficiency?
+Experiments
+1.	Testing different robot combinations.
+2.	Comparing DFS, BFS, A*, and heuristics for excavator navigation.
+3.	Evaluating task allocation strategies under the same search algorithm.
