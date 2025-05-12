@@ -1,0 +1,474 @@
+Experiment 2
+number of excavators: 10
+number of mazes: 10
+number of task assign methods: 5
+maze 0
+number of excavators: 10
+letters: ['B', 'N', 'C', 'H', 'O', 'E', 'P', 'D', 'R', 'G']
+letters positions: {'B': (8, 11), 'N': (13, 9), 'C': (10, 6), 'H': (6, 13), 'O': (5, 5), 'E': (15, 4), 'P': (1, 18), 'D': (11, 5), 'R': (1, 17), 'G': (15, 12)}
+Time for task assignment: 0.008875608444213867 seconds
+excavator E1 current position: (17, 17)
+excavator E1 target letter: (15, 12)
+excavator E2 current position: (8, 16)
+excavator E2 target letter: (1, 18)
+excavator E3 current position: (15, 17)
+excavator E3 target letter: (8, 11)
+excavator E4 current position: (19, 3)
+excavator E4 target letter: (15, 4)
+excavator E5 current position: (9, 9)
+excavator E5 target letter: (10, 6)
+excavator E6 current position: (1, 11)
+excavator E6 target letter: (6, 13)
+excavator E7 current position: (6, 2)
+excavator E7 target letter: (5, 5)
+excavator E8 current position: (11, 5)
+excavator E8 target letter: (11, 5)
+excavator E9 current position: (10, 16)
+excavator E9 target letter: (1, 17)
+excavator E10 current position: (9, 3)
+excavator E10 target letter: (13, 9)
+Time for pathfinding: 0.00027823448181152344 seconds
+excavator E1 path: [(17, 17), (16, 17), (15, 17), (15, 16), (15, 15), (14, 15), (13, 15), (13, 14), (13, 13), (14, 13), (15, 13), (15, 12)]
+excavator E1 path length: 12
+excavator E2 path: [(8, 16), (7, 16), (7, 17), (6, 17), (5, 17), (4, 17), (3, 17), (3, 18), (3, 19), (2, 19), (1, 19), (1, 18)]
+excavator E2 path length: 12
+excavator E3 path: [(15, 17), (15, 16), (14, 16), (14, 15), (13, 15), (12, 15), (12, 14), (12, 13), (11, 13), (11, 12), (11, 11), (10, 11), (9, 11), (8, 11)]
+excavator E3 path length: 14
+excavator E4 path: [(19, 3), (19, 4), (19, 5), (18, 5), (17, 5), (16, 5), (15, 5), (15, 4)]
+excavator E4 path length: 8
+excavator E5 path: [(9, 9), (10, 9), (10, 8), (10, 7), (10, 6)]
+excavator E5 path length: 5
+excavator E6 path: [(1, 11), (2, 11), (3, 11), (3, 12), (3, 13), (4, 13), (5, 13), (6, 13)]
+excavator E6 path length: 8
+excavator E7 path: [(6, 2), (5, 2), (5, 3), (5, 4), (5, 5)]
+excavator E7 path length: 5
+excavator E8 path: [(11, 5)]
+excavator E8 path length: 1
+excavator E9 path: [(10, 16), (10, 17), (9, 17), (8, 17), (7, 17), (6, 17), (5, 17), (4, 17), (3, 17), (3, 18), (3, 19), (2, 19), (1, 19), (1, 18), (1, 17)]
+excavator E9 path length: 15
+excavator E10 path: [(9, 3), (10, 3), (11, 3), (11, 4), (11, 5), (12, 5), (13, 5), (13, 6), (13, 7), (13, 8), (13, 9)]
+excavator E10 path length: 11
+total path length: 91
+maze 1
+number of excavators: 10
+letters: ['F', 'A', 'P', 'T', 'H', 'M', 'L', 'R', 'B', 'I']
+letters positions: {'F': (16, 17), 'A': (8, 11), 'P': (2, 5), 'T': (1, 6), 'H': (2, 15), 'M': (11, 17), 'L': (12, 15), 'R': (6, 15), 'B': (12, 19), 'I': (11, 9)}
+Time for task assignment: 0.006829738616943359 seconds
+excavator E1 current position: (9, 13)
+excavator E1 target letter: (8, 11)
+excavator E2 current position: (7, 5)
+excavator E2 target letter: (1, 6)
+excavator E3 current position: (13, 7)
+excavator E3 target letter: (11, 9)
+excavator E4 current position: (13, 16)
+excavator E4 target letter: (12, 19)
+excavator E5 current position: (19, 11)
+excavator E5 target letter: (16, 17)
+excavator E6 current position: (5, 1)
+excavator E6 target letter: (2, 5)
+excavator E7 current position: (12, 7)
+excavator E7 target letter: (12, 15)
+excavator E8 current position: (10, 15)
+excavator E8 target letter: (2, 15)
+excavator E9 current position: (9, 15)
+excavator E9 target letter: (6, 15)
+excavator E10 current position: (18, 7)
+excavator E10 target letter: (11, 17)
+Time for pathfinding: 0.0003597736358642578 seconds
+excavator E1 path: [(9, 13), (8, 13), (8, 12), (8, 11)]
+excavator E1 path length: 4
+excavator E2 path: [(7, 5), (7, 6), (7, 7), (7, 8), (7, 9), (6, 9), (5, 9), (5, 10), (4, 10), (3, 10), (3, 9), (2, 9), (1, 9), (1, 8), (1, 7), (1, 6)]
+excavator E2 path length: 16
+excavator E3 path: [(13, 7), (13, 8), (13, 9), (12, 9), (11, 9)]
+excavator E3 path length: 5
+excavator E4 path: [(13, 16), (13, 17), (13, 18), (13, 19), (12, 19)]
+excavator E4 path length: 5
+excavator E5 path: [(19, 11), (19, 10), (18, 10), (17, 10), (17, 11), (17, 12), (17, 13), (17, 14), (17, 15), (17, 16), (17, 17), (16, 17)]
+excavator E5 path length: 12
+excavator E6 path: [(5, 1), (4, 1), (3, 1), (2, 1), (2, 2), (2, 3), (1, 3), (1, 4), (1, 5), (2, 5)]
+excavator E6 path length: 10
+excavator E7 path: [(12, 7), (13, 7), (13, 8), (13, 9), (12, 9), (12, 10), (12, 11), (12, 12), (12, 13), (12, 14), (12, 15)]
+excavator E7 path length: 11
+excavator E8 path: [(10, 15), (9, 15), (8, 15), (7, 15), (6, 15), (5, 15), (4, 15), (3, 15), (2, 15)]
+excavator E8 path length: 9
+excavator E9 path: [(9, 15), (8, 15), (7, 15), (6, 15)]
+excavator E9 path length: 4
+excavator E10 path: [(18, 7), (17, 7), (17, 8), (17, 9), (17, 10), (17, 11), (17, 12), (17, 13), (17, 14), (17, 15), (16, 15), (15, 15), (14, 15), (13, 15), (13, 16), (13, 17), (13, 18), (13, 19), (12, 19), (11, 19), (11, 18), (11, 17)]
+excavator E10 path length: 22
+total path length: 98
+maze 2
+number of excavators: 10
+letters: ['K', 'O', 'C', 'M', 'H', 'S', 'P', 'F', 'B', 'D']
+letters positions: {'K': (2, 13), 'O': (10, 2), 'C': (17, 10), 'M': (17, 17), 'H': (19, 7), 'S': (8, 19), 'P': (7, 3), 'F': (15, 13), 'B': (17, 1), 'D': (17, 5)}
+Time for task assignment: 0.010402202606201172 seconds
+excavator E1 current position: (17, 16)
+excavator E1 target letter: (17, 17)
+excavator E2 current position: (3, 15)
+excavator E2 target letter: (2, 13)
+excavator E3 current position: (12, 9)
+excavator E3 target letter: (19, 7)
+excavator E4 current position: (10, 8)
+excavator E4 target letter: (7, 3)
+excavator E5 current position: (2, 17)
+excavator E5 target letter: (8, 19)
+excavator E6 current position: (2, 10)
+excavator E6 target letter: (17, 1)
+excavator E7 current position: (7, 14)
+excavator E7 target letter: (10, 2)
+excavator E8 current position: (19, 9)
+excavator E8 target letter: (17, 10)
+excavator E9 current position: (11, 16)
+excavator E9 target letter: (15, 13)
+excavator E10 current position: (11, 10)
+excavator E10 target letter: (17, 5)
+Time for pathfinding: 0.0004889965057373047 seconds
+excavator E1 path: [(17, 16), (17, 17)]
+excavator E1 path length: 2
+excavator E2 path: [(3, 15), (3, 14), (3, 13), (2, 13)]
+excavator E2 path length: 4
+excavator E3 path: [(12, 9), (13, 9), (14, 9), (14, 8), (14, 7), (15, 7), (15, 6), (16, 6), (17, 6), (18, 6), (19, 6), (19, 7)]
+excavator E3 path length: 12
+excavator E4 path: [(10, 8), (9, 8), (9, 9), (8, 9), (7, 9), (7, 8), (7, 7), (7, 6), (7, 5), (7, 4), (7, 3)]
+excavator E4 path length: 11
+excavator E5 path: [(2, 17), (2, 18), (3, 18), (3, 19), (4, 19), (5, 19), (6, 19), (7, 19), (8, 19)]
+excavator E5 path length: 9
+excavator E6 path: [(2, 10), (1, 10), (1, 9), (1, 8), (1, 7), (2, 7), (3, 7), (3, 6), (3, 5), (3, 4), (3, 3), (4, 3), (5, 3), (5, 2), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1)]
+excavator E6 path length: 27
+excavator E7 path: [(7, 14), (7, 13), (7, 12), (7, 11), (6, 11), (5, 11), (4, 11), (3, 11), (3, 10), (2, 10), (1, 10), (1, 9), (1, 8), (1, 7), (2, 7), (3, 7), (3, 6), (3, 5), (3, 4), (3, 3), (4, 3), (5, 3), (5, 2), (5, 1), (6, 1), (7, 1), (8, 1), (8, 2), (9, 2), (10, 2)]
+excavator E7 path length: 30
+excavator E8 path: [(19, 9), (18, 9), (17, 9), (17, 10)]
+excavator E8 path length: 4
+excavator E9 path: [(11, 16), (11, 17), (11, 18), (11, 19), (12, 19), (13, 19), (13, 18), (13, 17), (13, 16), (13, 15), (13, 14), (13, 13), (13, 12), (13, 11), (14, 11), (15, 11), (15, 12), (15, 13)]
+excavator E9 path length: 18
+excavator E10 path: [(11, 10), (11, 9), (11, 8), (11, 7), (11, 6), (12, 6), (13, 6), (14, 6), (15, 6), (15, 5), (16, 5), (17, 5)]
+excavator E10 path length: 12
+total path length: 129
+maze 3
+number of excavators: 10
+letters: ['E', 'Q', 'D', 'H', 'S', 'J', 'N', 'R', 'T', 'O']
+letters positions: {'E': (3, 11), 'Q': (19, 15), 'D': (2, 4), 'H': (2, 19), 'S': (9, 17), 'J': (11, 15), 'N': (9, 15), 'R': (7, 5), 'T': (19, 8), 'O': (13, 3)}
+Time for task assignment: 0.008790016174316406 seconds
+excavator E1 current position: (4, 15)
+excavator E1 target letter: (11, 15)
+excavator E2 current position: (4, 17)
+excavator E2 target letter: (2, 19)
+excavator E3 current position: (17, 15)
+excavator E3 target letter: (19, 15)
+excavator E4 current position: (1, 10)
+excavator E4 target letter: (3, 11)
+excavator E5 current position: (13, 8)
+excavator E5 target letter: (9, 15)
+excavator E6 current position: (14, 5)
+excavator E6 target letter: (19, 8)
+excavator E7 current position: (6, 1)
+excavator E7 target letter: (13, 3)
+excavator E8 current position: (10, 17)
+excavator E8 target letter: (9, 17)
+excavator E9 current position: (2, 1)
+excavator E9 target letter: (7, 5)
+excavator E10 current position: (2, 7)
+excavator E10 target letter: (2, 4)
+Time for pathfinding: 0.00026488304138183594 seconds
+excavator E1 path: [(4, 15), (5, 15), (5, 14), (5, 13), (6, 13), (7, 13), (8, 13), (9, 13), (10, 13), (10, 14), (10, 15), (11, 15)]
+excavator E1 path length: 12
+excavator E2 path: [(4, 17), (4, 18), (4, 19), (3, 19), (2, 19)]
+excavator E2 path length: 5
+excavator E3 path: [(17, 15), (17, 14), (17, 13), (17, 12), (17, 11), (18, 11), (19, 11), (19, 12), (19, 13), (19, 14), (19, 15)]
+excavator E3 path length: 11
+excavator E4 path: [(1, 10), (2, 10), (3, 10), (3, 11)]
+excavator E4 path length: 4
+excavator E5 path: [(13, 8), (13, 9), (12, 9), (11, 9), (11, 10), (11, 11), (11, 12), (11, 13), (10, 13), (10, 14), (10, 15), (9, 15)]
+excavator E5 path length: 12
+excavator E6 path: [(14, 5), (15, 5), (16, 5), (17, 5), (17, 6), (17, 7), (17, 8), (18, 8), (19, 8)]
+excavator E6 path length: 9
+excavator E7 path: [(6, 1), (6, 2), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3), (11, 3), (12, 3), (13, 3)]
+excavator E7 path length: 10
+excavator E8 path: [(10, 17), (9, 17)]
+excavator E8 path length: 2
+excavator E9 path: [(2, 1), (1, 1), (1, 2), (1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3), (11, 3), (11, 4), (11, 5), (10, 5), (9, 5), (8, 5), (7, 5)]
+excavator E9 path length: 20
+excavator E10 path: [(2, 7), (2, 6), (2, 5), (2, 4)]
+excavator E10 path length: 4
+total path length: 89
+maze 4
+number of excavators: 10
+letters: ['S', 'J', 'A', 'K', 'G', 'T', 'B', 'H', 'R', 'P']
+letters positions: {'S': (1, 5), 'J': (5, 1), 'A': (3, 15), 'K': (4, 11), 'G': (7, 7), 'T': (8, 9), 'B': (3, 13), 'H': (4, 1), 'R': (4, 7), 'P': (14, 19)}
+Time for task assignment: 0.009741067886352539 seconds
+excavator E1 current position: (7, 13)
+excavator E1 target letter: (8, 9)
+excavator E2 current position: (13, 11)
+excavator E2 target letter: (4, 11)
+excavator E3 current position: (3, 3)
+excavator E3 target letter: (4, 1)
+excavator E4 current position: (11, 1)
+excavator E4 target letter: (7, 7)
+excavator E5 current position: (13, 4)
+excavator E5 target letter: (5, 1)
+excavator E6 current position: (13, 18)
+excavator E6 target letter: (14, 19)
+excavator E7 current position: (7, 17)
+excavator E7 target letter: (3, 15)
+excavator E8 current position: (19, 4)
+excavator E8 target letter: (1, 5)
+excavator E9 current position: (4, 18)
+excavator E9 target letter: (3, 13)
+excavator E10 current position: (5, 15)
+excavator E10 target letter: (4, 7)
+Time for pathfinding: 0.0004918575286865234 seconds
+excavator E1 path: [(7, 13), (7, 12), (7, 11), (7, 10), (7, 9), (8, 9)]
+excavator E1 path length: 6
+excavator E2 path: [(13, 11), (12, 11), (11, 11), (10, 11), (9, 11), (9, 12), (9, 13), (8, 13), (8, 14), (8, 15), (7, 15), (6, 15), (5, 15), (5, 14), (5, 13), (5, 12), (5, 11), (4, 11)]
+excavator E2 path length: 18
+excavator E3 path: [(3, 3), (2, 3), (2, 2), (2, 1), (3, 1), (4, 1)]
+excavator E3 path length: 6
+excavator E4 path: [(11, 1), (10, 1), (9, 1), (9, 2), (9, 3), (9, 4), (9, 5), (8, 5), (7, 5), (7, 6), (7, 7)]
+excavator E4 path length: 11
+excavator E5 path: [(13, 4), (12, 4), (12, 3), (11, 3), (11, 2), (10, 2), (9, 2), (8, 2), (7, 2), (7, 3), (6, 3), (5, 3), (5, 4), (5, 5), (4, 5), (3, 5), (3, 4), (3, 3), (2, 3), (2, 2), (2, 1), (3, 1), (4, 1), (5, 1)]
+excavator E5 path length: 24
+excavator E6 path: [(13, 18), (13, 19), (14, 19)]
+excavator E6 path length: 3
+excavator E7 path: [(7, 17), (6, 17), (5, 17), (4, 17), (3, 17), (3, 16), (3, 15)]
+excavator E7 path length: 7
+excavator E8 path: [(19, 4), (19, 5), (19, 6), (19, 7), (19, 8), (19, 9), (18, 9), (17, 9), (16, 9), (15, 9), (14, 9), (13, 9), (13, 8), (13, 7), (12, 7), (12, 6), (12, 5), (12, 4), (12, 3), (11, 3), (11, 2), (10, 2), (9, 2), (8, 2), (7, 2), (7, 3), (6, 3), (5, 3), (5, 4), (5, 5), (4, 5), (3, 5), (2, 5), (1, 5)]
+excavator E8 path length: 34
+excavator E9 path: [(4, 18), (4, 19), (3, 19), (2, 19), (1, 19), (1, 18), (1, 17), (1, 16), (1, 15), (1, 14), (1, 13), (2, 13), (3, 13)]
+excavator E9 path length: 13
+excavator E10 path: [(5, 15), (5, 14), (5, 13), (5, 12), (5, 11), (5, 10), (5, 9), (4, 9), (3, 9), (3, 8), (3, 7), (4, 7)]
+excavator E10 path length: 12
+total path length: 134
+maze 5
+number of excavators: 10
+letters: ['M', 'Q', 'D', 'B', 'E', 'H', 'G', 'J', 'I', 'T']
+letters positions: {'M': (1, 1), 'Q': (4, 19), 'D': (3, 13), 'B': (3, 6), 'E': (5, 13), 'H': (16, 19), 'G': (13, 3), 'J': (19, 19), 'I': (7, 18), 'T': (13, 10)}
+Time for task assignment: 0.008216142654418945 seconds
+excavator E1 current position: (13, 12)
+excavator E1 target letter: (13, 10)
+excavator E2 current position: (18, 1)
+excavator E2 target letter: (19, 19)
+excavator E3 current position: (13, 3)
+excavator E3 target letter: (13, 3)
+excavator E4 current position: (3, 9)
+excavator E4 target letter: (5, 13)
+excavator E5 current position: (9, 5)
+excavator E5 target letter: (1, 1)
+excavator E6 current position: (2, 17)
+excavator E6 target letter: (4, 19)
+excavator E7 current position: (8, 15)
+excavator E7 target letter: (7, 18)
+excavator E8 current position: (18, 2)
+excavator E8 target letter: (16, 19)
+excavator E9 current position: (3, 7)
+excavator E9 target letter: (3, 6)
+excavator E10 current position: (1, 12)
+excavator E10 target letter: (3, 13)
+Time for pathfinding: 0.0003788471221923828 seconds
+excavator E1 path: [(13, 12), (13, 11), (13, 10)]
+excavator E1 path length: 3
+excavator E2 path: [(18, 1), (18, 2), (18, 3), (19, 3), (19, 4), (19, 5), (19, 6), (19, 7), (19, 8), (19, 9), (19, 10), (19, 11), (18, 11), (17, 11), (17, 12), (17, 13), (17, 14), (17, 15), (18, 15), (19, 15), (19, 16), (19, 17), (19, 18), (19, 19)]
+excavator E2 path length: 24
+excavator E3 path: [(13, 3)]
+excavator E3 path length: 1
+excavator E4 path: [(3, 9), (3, 10), (3, 11), (4, 11), (5, 11), (6, 11), (7, 11), (7, 12), (7, 13), (7, 14), (6, 14), (5, 14), (5, 13)]
+excavator E4 path length: 13
+excavator E5 path: [(9, 5), (8, 5), (7, 5), (7, 4), (7, 3), (7, 2), (6, 2), (6, 1), (5, 1), (4, 1), (3, 1), (2, 1), (1, 1)]
+excavator E5 path length: 13
+excavator E6 path: [(2, 17), (1, 17), (1, 18), (1, 19), (2, 19), (3, 19), (4, 19)]
+excavator E6 path length: 7
+excavator E7 path: [(8, 15), (7, 15), (7, 16), (7, 17), (7, 18)]
+excavator E7 path length: 5
+excavator E8 path: [(18, 2), (18, 3), (19, 3), (19, 4), (19, 5), (19, 6), (19, 7), (18, 7), (17, 7), (17, 8), (17, 9), (17, 10), (17, 11), (17, 12), (17, 13), (17, 14), (17, 15), (18, 15), (19, 15), (19, 16), (19, 17), (19, 18), (19, 19), (18, 19), (17, 19), (16, 19)]
+excavator E8 path length: 26
+excavator E9 path: [(3, 7), (3, 6)]
+excavator E9 path length: 2
+excavator E10 path: [(1, 12), (1, 13), (1, 14), (2, 14), (2, 15), (3, 15), (3, 16), (3, 17), (4, 17), (5, 17), (5, 16), (5, 15), (5, 14), (5, 13), (4, 13), (3, 13)]
+excavator E10 path length: 16
+total path length: 110
+maze 6
+number of excavators: 10
+letters: ['B', 'L', 'S', 'D', 'N', 'K', 'T', 'E', 'C', 'P']
+letters positions: {'B': (7, 14), 'L': (9, 8), 'S': (10, 19), 'D': (13, 13), 'N': (6, 17), 'K': (15, 1), 'T': (9, 19), 'E': (3, 11), 'C': (1, 10), 'P': (13, 5)}
+Time for task assignment: 0.005498170852661133 seconds
+excavator E1 current position: (9, 14)
+excavator E1 target letter: (13, 13)
+excavator E2 current position: (4, 18)
+excavator E2 target letter: (6, 17)
+excavator E3 current position: (1, 18)
+excavator E3 target letter: (9, 19)
+excavator E4 current position: (11, 9)
+excavator E4 target letter: (9, 8)
+excavator E5 current position: (10, 15)
+excavator E5 target letter: (10, 19)
+excavator E6 current position: (1, 12)
+excavator E6 target letter: (1, 10)
+excavator E7 current position: (13, 5)
+excavator E7 target letter: (13, 5)
+excavator E8 current position: (3, 3)
+excavator E8 target letter: (3, 11)
+excavator E9 current position: (15, 9)
+excavator E9 target letter: (7, 14)
+excavator E10 current position: (9, 1)
+excavator E10 target letter: (15, 1)
+Time for pathfinding: 0.00020933151245117188 seconds
+excavator E1 path: [(9, 14), (9, 13), (9, 12), (9, 11), (10, 11), (11, 11), (11, 12), (11, 13), (12, 13), (13, 13)]
+excavator E1 path length: 10
+excavator E2 path: [(4, 18), (4, 17), (5, 17), (6, 17)]
+excavator E2 path length: 4
+excavator E3 path: [(1, 18), (1, 19), (2, 19), (3, 19), (3, 18), (4, 18), (5, 18), (5, 19), (6, 19), (7, 19), (8, 19), (9, 19)]
+excavator E3 path length: 12
+excavator E4 path: [(11, 9), (10, 9), (9, 9), (9, 8)]
+excavator E4 path length: 4
+excavator E5 path: [(10, 15), (11, 15), (11, 16), (11, 17), (10, 17), (10, 18), (10, 19)]
+excavator E5 path length: 7
+excavator E6 path: [(1, 12), (1, 11), (1, 10)]
+excavator E6 path length: 3
+excavator E7 path: [(13, 5)]
+excavator E7 path length: 1
+excavator E8 path: [(3, 3), (4, 3), (5, 3), (5, 4), (5, 5), (5, 6), (5, 7), (5, 8), (5, 9), (4, 9), (3, 9), (3, 10), (3, 11)]
+excavator E8 path length: 13
+excavator E9 path: [(15, 9), (14, 9), (13, 9), (12, 9), (11, 9), (10, 9), (9, 9), (9, 8), (8, 8), (7, 8), (7, 9), (7, 10), (7, 11), (7, 12), (7, 13), (7, 14)]
+excavator E9 path length: 16
+excavator E10 path: [(9, 1), (8, 1), (8, 2), (8, 3), (9, 3), (10, 3), (11, 3), (11, 2), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1)]
+excavator E10 path length: 13
+total path length: 83
+maze 7
+number of excavators: 10
+letters: ['G', 'J', 'R', 'C', 'M', 'B', 'E', 'Q', 'H', 'N']
+letters positions: {'G': (15, 4), 'J': (15, 11), 'R': (14, 12), 'C': (7, 13), 'M': (18, 9), 'B': (19, 16), 'E': (1, 7), 'Q': (13, 18), 'H': (1, 15), 'N': (7, 15)}
+Time for task assignment: 0.009222745895385742 seconds
+excavator E1 current position: (11, 1)
+excavator E1 target letter: (14, 12)
+excavator E2 current position: (14, 18)
+excavator E2 target letter: (13, 18)
+excavator E3 current position: (9, 11)
+excavator E3 target letter: (15, 11)
+excavator E4 current position: (19, 15)
+excavator E4 target letter: (7, 15)
+excavator E5 current position: (13, 1)
+excavator E5 target letter: (15, 4)
+excavator E6 current position: (19, 6)
+excavator E6 target letter: (18, 9)
+excavator E7 current position: (11, 13)
+excavator E7 target letter: (7, 13)
+excavator E8 current position: (19, 19)
+excavator E8 target letter: (19, 16)
+excavator E9 current position: (7, 11)
+excavator E9 target letter: (1, 7)
+excavator E10 current position: (14, 9)
+excavator E10 target letter: (1, 15)
+Time for pathfinding: 0.00039124488830566406 seconds
+excavator E1 path: [(11, 1), (11, 2), (11, 3), (12, 3), (13, 3), (14, 3), (14, 4), (14, 5), (14, 6), (14, 7), (15, 7), (15, 8), (15, 9), (14, 9), (14, 10), (14, 11), (14, 12)]
+excavator E1 path length: 17
+excavator E2 path: [(14, 18), (13, 18)]
+excavator E2 path length: 2
+excavator E3 path: [(9, 11), (9, 10), (9, 9), (9, 8), (10, 8), (10, 7), (11, 7), (12, 7), (13, 7), (14, 7), (15, 7), (15, 8), (15, 9), (14, 9), (14, 10), (14, 11), (15, 11)]
+excavator E3 path length: 17
+excavator E4 path: [(19, 15), (18, 15), (18, 14), (18, 13), (17, 13), (16, 13), (15, 13), (14, 13), (13, 13), (13, 14), (12, 14), (11, 14), (10, 14), (10, 13), (9, 13), (8, 13), (7, 13), (7, 14), (7, 15)]
+excavator E4 path length: 19
+excavator E5 path: [(13, 1), (14, 1), (14, 2), (14, 3), (14, 4), (15, 4)]
+excavator E5 path length: 6
+excavator E6 path: [(19, 6), (19, 7), (18, 7), (18, 8), (18, 9)]
+excavator E6 path length: 5
+excavator E7 path: [(11, 13), (10, 13), (9, 13), (8, 13), (7, 13)]
+excavator E7 path length: 5
+excavator E8 path: [(19, 19), (19, 18), (19, 17), (19, 16)]
+excavator E8 path length: 4
+excavator E9 path: [(7, 11), (6, 11), (5, 11), (5, 12), (5, 13), (4, 13), (3, 13), (2, 13), (1, 13), (1, 12), (1, 11), (1, 10), (1, 9), (1, 8), (1, 7)]
+excavator E9 path length: 15
+excavator E10 path: [(14, 9), (14, 10), (14, 11), (14, 12), (14, 13), (13, 13), (13, 14), (12, 14), (11, 14), (10, 14), (10, 13), (9, 13), (8, 13), (7, 13), (7, 14), (7, 15), (6, 15), (5, 15), (5, 16), (4, 16), (3, 16), (3, 15), (2, 15), (1, 15)]
+excavator E10 path length: 24
+total path length: 114
+maze 8
+number of excavators: 10
+letters: ['T', 'B', 'D', 'E', 'O', 'C', 'Q', 'S', 'P', 'A']
+letters positions: {'T': (11, 19), 'B': (3, 11), 'D': (1, 14), 'E': (6, 3), 'O': (9, 15), 'C': (16, 5), 'Q': (4, 1), 'S': (19, 10), 'P': (12, 19), 'A': (6, 13)}
+Time for task assignment: 0.011431217193603516 seconds
+excavator E1 current position: (13, 5)
+excavator E1 target letter: (16, 5)
+excavator E2 current position: (19, 11)
+excavator E2 target letter: (19, 10)
+excavator E3 current position: (14, 5)
+excavator E3 target letter: (9, 15)
+excavator E4 current position: (18, 14)
+excavator E4 target letter: (6, 13)
+excavator E5 current position: (13, 16)
+excavator E5 target letter: (11, 19)
+excavator E6 current position: (3, 11)
+excavator E6 target letter: (3, 11)
+excavator E7 current position: (15, 16)
+excavator E7 target letter: (12, 19)
+excavator E8 current position: (7, 9)
+excavator E8 target letter: (6, 3)
+excavator E9 current position: (9, 5)
+excavator E9 target letter: (4, 1)
+excavator E10 current position: (16, 7)
+excavator E10 target letter: (1, 14)
+Time for pathfinding: 0.0005910396575927734 seconds
+excavator E1 path: [(13, 5), (14, 5), (15, 5), (16, 5)]
+excavator E1 path length: 4
+excavator E2 path: [(19, 11), (19, 10)]
+excavator E2 path length: 2
+excavator E3 path: [(14, 5), (14, 6), (15, 6), (15, 7), (16, 7), (16, 8), (16, 9), (15, 9), (14, 9), (14, 10), (14, 11), (13, 11), (12, 11), (12, 12), (12, 13), (12, 14), (12, 15), (11, 15), (10, 15), (9, 15)]
+excavator E3 path length: 20
+excavator E4 path: [(18, 14), (18, 13), (17, 13), (17, 12), (17, 11), (18, 11), (19, 11), (19, 10), (19, 9), (19, 8), (19, 7), (19, 6), (18, 6), (18, 5), (17, 5), (16, 5), (16, 6), (16, 7), (16, 8), (16, 9), (15, 9), (14, 9), (14, 10), (14, 11), (13, 11), (12, 11), (11, 11), (10, 11), (9, 11), (9, 12), (8, 12), (7, 12), (7, 13), (6, 13)]
+excavator E4 path length: 34
+excavator E5 path: [(13, 16), (13, 17), (12, 17), (11, 17), (11, 18), (11, 19)]
+excavator E5 path length: 6
+excavator E6 path: [(3, 11)]
+excavator E6 path length: 1
+excavator E7 path: [(15, 16), (16, 16), (17, 16), (17, 17), (17, 18), (17, 19), (16, 19), (15, 19), (14, 19), (13, 19), (12, 19)]
+excavator E7 path length: 11
+excavator E8 path: [(7, 9), (7, 10), (6, 10), (5, 10), (5, 9), (5, 8), (5, 7), (6, 7), (7, 7), (7, 6), (7, 5), (7, 4), (7, 3), (6, 3)]
+excavator E8 path length: 14
+excavator E9 path: [(9, 5), (9, 6), (9, 7), (9, 8), (9, 9), (8, 9), (7, 9), (7, 10), (6, 10), (5, 10), (5, 9), (5, 8), (5, 7), (6, 7), (7, 7), (7, 6), (7, 5), (7, 4), (7, 3), (6, 3), (6, 2), (6, 1), (5, 1), (4, 1)]
+excavator E9 path length: 24
+excavator E10 path: [(16, 7), (16, 8), (16, 9), (15, 9), (14, 9), (14, 10), (14, 11), (13, 11), (12, 11), (12, 12), (12, 13), (12, 14), (12, 15), (11, 15), (10, 15), (9, 15), (9, 16), (9, 17), (8, 17), (7, 17), (7, 18), (7, 19), (6, 19), (5, 19), (4, 19), (3, 19), (2, 19), (1, 19), (1, 18), (1, 17), (1, 16), (1, 15), (1, 14)]
+excavator E10 path length: 33
+total path length: 149
+maze 9
+number of excavators: 10
+letters: ['C', 'K', 'P', 'G', 'E', 'T', 'I', 'D', 'S', 'N']
+letters positions: {'C': (1, 9), 'K': (1, 12), 'P': (15, 5), 'G': (9, 13), 'E': (9, 2), 'T': (11, 15), 'I': (7, 2), 'D': (19, 19), 'S': (5, 19), 'N': (2, 5)}
+Time for task assignment: 0.009702920913696289 seconds
+excavator E1 current position: (10, 3)
+excavator E1 target letter: (9, 2)
+excavator E2 current position: (1, 18)
+excavator E2 target letter: (1, 12)
+excavator E3 current position: (6, 6)
+excavator E3 target letter: (2, 5)
+excavator E4 current position: (15, 16)
+excavator E4 target letter: (9, 13)
+excavator E5 current position: (3, 17)
+excavator E5 target letter: (1, 9)
+excavator E6 current position: (11, 17)
+excavator E6 target letter: (11, 15)
+excavator E7 current position: (19, 14)
+excavator E7 target letter: (19, 19)
+excavator E8 current position: (11, 3)
+excavator E8 target letter: (7, 2)
+excavator E9 current position: (12, 16)
+excavator E9 target letter: (5, 19)
+excavator E10 current position: (13, 10)
+excavator E10 target letter: (15, 5)
+Time for pathfinding: 0.00027680397033691406 seconds
+excavator E1 path: [(10, 3), (9, 3), (9, 2)]
+excavator E1 path length: 3
+excavator E2 path: [(1, 18), (1, 17), (1, 16), (1, 15), (1, 14), (1, 13), (1, 12)]
+excavator E2 path length: 7
+excavator E3 path: [(6, 6), (5, 6), (5, 5), (4, 5), (3, 5), (2, 5)]
+excavator E3 path length: 6
+excavator E4 path: [(15, 16), (14, 16), (13, 16), (12, 16), (12, 17), (11, 17), (10, 17), (9, 17), (9, 16), (9, 15), (8, 15), (7, 15), (6, 15), (6, 14), (6, 13), (7, 13), (8, 13), (9, 13)]
+excavator E4 path length: 18
+excavator E5 path: [(3, 17), (2, 17), (1, 17), (1, 16), (1, 15), (1, 14), (1, 13), (1, 12), (1, 11), (1, 10), (1, 9)]
+excavator E5 path length: 11
+excavator E6 path: [(11, 17), (10, 17), (9, 17), (9, 16), (9, 15), (10, 15), (11, 15)]
+excavator E6 path length: 7
+excavator E7 path: [(19, 14), (19, 15), (19, 16), (19, 17), (19, 18), (19, 19)]
+excavator E7 path length: 6
+excavator E8 path: [(11, 3), (10, 3), (9, 3), (9, 2), (9, 1), (8, 1), (7, 1), (7, 2)]
+excavator E8 path length: 8
+excavator E9 path: [(12, 16), (12, 17), (11, 17), (10, 17), (9, 17), (8, 17), (7, 17), (6, 17), (5, 17), (5, 18), (5, 19)]
+excavator E9 path length: 11
+excavator E10 path: [(13, 10), (13, 9), (14, 9), (15, 9), (16, 9), (17, 9), (18, 9), (19, 9), (19, 8), (19, 7), (19, 6), (18, 6), (17, 6), (17, 5), (16, 5), (15, 5)]
+excavator E10 path length: 16
+total path length: 93

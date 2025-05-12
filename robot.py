@@ -1,4 +1,4 @@
-from abc import ABC, abstractmethod
+from abc import ABC
 
 class Robot(ABC):
     def __init__(self, position, robot_id):
@@ -25,11 +25,3 @@ class Robot(ABC):
         :return: (x, y) tuple
         """
         return self.position
-
-    @abstractmethod
-    def perform_task(self, maze):
-        """
-        Abstract method that each robot must implement to perform its specific task
-        :param maze: 2D list representing the maze
-        """
-        pass 

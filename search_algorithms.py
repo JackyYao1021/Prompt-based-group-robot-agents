@@ -51,7 +51,6 @@ class AStarFinder(PathFinder):
         super().__init__(env)
     
     def heuristic(self, a: Tuple[int, int], b: Tuple[int, int]) -> float:
-        """Manhattan distance heuristic"""
         return abs(a[0] - b[0]) + abs(a[1] - b[1])
     
     def find_path(self, start: Tuple[int, int], goal: Tuple[int, int]) -> List[Tuple[int, int]]:
