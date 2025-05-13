@@ -11,16 +11,19 @@ import matplotlib.pyplot as plt
 random.seed(0)  
 
 number_of_excavators = 10
-show_animation = False
+show_animation = True
+note_results = False
+
 if __name__ == "__main__":
     task_assign_methods = ["random", "nearest", "simple_hungarian", "hungarian", "bid"]
             
     for task_assign_method in task_assign_methods:
-        with open(f"./results/experiment_2/{task_assign_method}.txt", "w") as f:
-            f.write("Experiment 2\n")
-            f.write(f"number of excavators: {number_of_excavators}\n")
-            f.write(f"number of mazes: 10\n")
-            f.write(f"number of task assign methods: {len(task_assign_methods)}\n")
+        if note_results:
+            with open(f"./results/experiment_2/{task_assign_method}.txt", "w") as f:
+                f.write("Experiment 2\n")
+                f.write(f"number of excavators: {number_of_excavators}\n")
+                f.write(f"number of mazes: 10\n")
+                f.write(f"number of task assign methods: {len(task_assign_methods)}\n")
             
     for i in range(10):
         maze, letters_positions = load_maze(f"./mazes/maze_{i}.txt")
@@ -41,34 +44,40 @@ if __name__ == "__main__":
                 excavator.set_path_finder("AStar")
                 controller.add_excavator(excavator)
                 
-            with open(f"./results/experiment_2/{task_assign_method}.txt", "a") as f:
-                f.write(f"maze {i}\n")
-                f.write(f"number of excavators: {number_of_excavators}\n")
-                f.write(f"letters: {letters}\n")
-                f.write(f"letters positions: {letters_positions}\n")
-                
-                time_start = time.time()
-                controller.assign_tasks(task_assign_method)
-                time_end = time.time()
-                f.write(f"Time for task assignment: {time_end - time_start} seconds\n")
-                for excavator in controller.excavators:
-                    f.write(f"excavator {excavator.id} current position: {excavator.position}\n")
-                    f.write(f"excavator {excavator.id} target letter: {excavator.target}\n")
+            if note_results:
+                with open(f"./results/experiment_2/{task_assign_method}.txt", "a") as f:
+                    f.write(f"maze {i}\n")
+                    f.write(f"number of excavators: {number_of_excavators}\n")
+                    f.write(f"letters: {letters}\n")
+                    f.write(f"letters positions: {letters_positions}\n")
                 
             time_start = time.time()
+            controller.assign_tasks(task_assign_method)
+            time_end = time.time()
+            
+            if note_results:
+                with open(f"./results/experiment_2/{task_assign_method}.txt", "a") as f:
+                    f.write(f"Time for task assignment: {time_end - time_start} seconds\n")
+                    for excavator in controller.excavators:
+                        f.write(f"excavator {excavator.id} current position: {excavator.position}\n")
+                        f.write(f"excavator {excavator.id} target letter: {excavator.target}\n")
+                
+            time_start = time.time()    
             for excavator in controller.excavators:
                 excavator.path = excavator.find_path()
             time_end = time.time()
-            with open(f"./results/experiment_2/{task_assign_method}.txt", "a") as f:
-                f.write(f"Time for pathfinding: {time_end - time_start} seconds\n")
+            if note_results:
+                with open(f"./results/experiment_2/{task_assign_method}.txt", "a") as f:
+                    f.write(f"Time for pathfinding: {time_end - time_start} seconds\n")
 
-            with open(f"./results/experiment_2/{task_assign_method}.txt", "a") as f:
-                total_path_length = 0
-                for excavator in controller.excavators:
-                    f.write(f"excavator {excavator.id} path: {excavator.path}\n")
-                    f.write(f"excavator {excavator.id} path length: {len(excavator.path)}\n")
-                    total_path_length += len(excavator.path)
-                f.write(f"total path length: {total_path_length}\n")
+            if note_results:
+                with open(f"./results/experiment_2/{task_assign_method}.txt", "a") as f:
+                    total_path_length = 0
+                    for excavator in controller.excavators:
+                        f.write(f"excavator {excavator.id} path: {excavator.path}\n")
+                        f.write(f"excavator {excavator.id} path length: {len(excavator.path)}\n")
+                        total_path_length += len(excavator.path)
+                    f.write(f"total path length: {total_path_length}\n")
                     
             if show_animation:        
                 robots = {
@@ -81,6 +90,7 @@ if __name__ == "__main__":
                 while True: 
                     visualizer.plot_maze()
                     visualizer.plot_robots()
+                    
                     plt.pause(0.2)
                     for excavator in controller.excavators:
                         excavator.move()

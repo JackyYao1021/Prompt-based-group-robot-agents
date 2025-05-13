@@ -9,7 +9,6 @@ class Controller(Robot):
         super().__init__(position, robot_id)
         self.excavators = []
         self.target_letters = {}
-        self.task_queue = []
         self.command_history = []
         
     

@@ -10,16 +10,6 @@ class PathFinder(ABC):
     
     @abstractmethod
     def find_path(self, start: Tuple[int, int], goal: Tuple[int, int]) -> List[Tuple[int, int]]:
-        """Find a path from start to goal.
-        
-        Args:
-            start: Starting position (x, y)
-            goal: Goal position (x, y)
-            
-        Returns:
-            List of positions forming the path from start to goal.
-            Returns empty list if no path is found.
-        """
         pass
     
     def in_bounds(self, x, y):
@@ -47,9 +37,6 @@ class BFSFinder(PathFinder):
         return []
 
 class AStarFinder(PathFinder):
-    def __init__(self, env):
-        super().__init__(env)
-    
     def heuristic(self, a: Tuple[int, int], b: Tuple[int, int]) -> float:
         return abs(a[0] - b[0]) + abs(a[1] - b[1])
     
@@ -109,9 +96,6 @@ class DFSFinder(PathFinder):
     
     
 class DijkstraFinder(PathFinder):
-    def __init__(self, maze):
-        super().__init__(maze)
-    
     def find_path(self, start: Tuple[int, int], goal: Tuple[int, int]) -> List[Tuple[int, int]]:
         heap = [(0, start)]
         visited = set()
@@ -147,9 +131,6 @@ class DijkstraFinder(PathFinder):
         return path[::-1] if goal in previous else []
 
 class GBFSFinder(PathFinder):
-    def __init__(self, maze):
-        super().__init__(maze)
-    
     def heuristic(self, a, b):  
         return abs(a[0] - b[0]) + abs(a[1] - b[1])
 

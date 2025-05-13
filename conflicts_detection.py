@@ -1,5 +1,6 @@
 import re
 from collections import defaultdict
+import pandas as pd
 
 def parse_file(file_path):
     with open(file_path, 'r') as f:
@@ -89,8 +90,8 @@ def detect_opening_conflicts(trial):
     
     return opening_conflicts
 
-def main():
-    trials = parse_file('results/experiment_2/random.txt')
+def conflict_detection(task_assign_method):
+    trials = parse_file(f'results/experiment_2/{task_assign_method}.txt')
     
     total_rc = 0
     total_oc = 0
@@ -125,6 +126,16 @@ def main():
     print(f"Total Region Conflicts: {total_rc}")
     print(f"Total Opening Conflicts: {total_oc}")
     print(f"Total Conflicts: {total_rc + total_oc}")
+    
+    return total_rc, total_oc
 
 if __name__ == "__main__":
-    main()
+    methods = ["random", "nearest", "simple_hungarian", "hungarian", "bid"]
+    
+    df = pd.DataFrame(columns=methods)
+    
+    for method in methods:
+        total_rc, total_oc = conflict_detection(method)
+        df[method] = [total_rc, total_oc, total_rc + total_oc]
+    
+    print(df.to_latex())

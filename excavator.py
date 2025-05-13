@@ -1,6 +1,4 @@
-from collections import deque
 from robot import Robot
-import heapq
 from search_algorithms import BFSFinder, AStarFinder, DijkstraFinder, GBFSFinder, DFSFinder
 
 class Excavator(Robot):

@@ -19,6 +19,9 @@ def maze_preparation(width, height, number_of_targets, extra_paths=0):
 # if __name__ == "__main__":
 #     maze_preparation(21, 21, 20, extra_paths=60)
 
+show_animation = True
+note_results = False
+
 if __name__ == "__main__":
     
     path_finders = ["DFS", "BFS", "AStar", "Dijkstra", "GBFS"]
@@ -26,8 +29,9 @@ if __name__ == "__main__":
     for path_finder in path_finders:
     
         number_of_excavators = 1
-        with open(f"./results/{path_finder}.txt", "w") as f:
-            f.write(f"")
+        if note_results:
+            with open(f"./results/{path_finder}.txt", "w") as f:
+                f.write(f"")
             
         total_time = 0
             
@@ -67,9 +71,10 @@ if __name__ == "__main__":
                 end_time = time.time()
                 total_time += end_time - start_time
                 print(len(excavator.path))
-                with open(f"./results/{path_finder}.txt", "a") as f:
-                    f.write(f"maze {i}\n")
-                    f.write(f"time taken: {end_time - start_time} seconds\n")
+                if note_results:
+                    with open(f"./results/{path_finder}.txt", "a") as f:
+                        f.write(f"maze {i}\n")
+                        f.write(f"time taken: {end_time - start_time} seconds\n")
                     f.write(f"excavator {excavator.id} path length: {len(excavator.path)}\n")
                     f.write(f"excavator {excavator.id} path: {excavator.path}\n")
                     
@@ -79,9 +84,11 @@ if __name__ == "__main__":
                     visualizer.plot_robots()
                             
                     excavator.move()
-                    # plt.pause(0.5)
+                    if show_animation:
+                        plt.pause(0.5)
             plt.close()
-        with open(f"./results/{path_finder}.txt", "a") as f:
-            f.write(f"Total time taken: {total_time} seconds\n")
-            f.write(f"Average time taken: {total_time / 10} seconds\n")
+        if note_results:
+            with open(f"./results/{path_finder}.txt", "a") as f:
+                f.write(f"Total time taken: {total_time} seconds\n")
+                f.write(f"Average time taken: {total_time / 10} seconds\n")
 
